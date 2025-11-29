@@ -31,7 +31,7 @@
             </div>
         </div>
     </nav>
-     <!-- LOGIN MODAL -->
+    <!-- LOGIN MODAL -->
     <div id="loginModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -68,20 +68,17 @@
 
         <!-- CARD 1 - E-BOOK -->
         <div class="card">
-            <svg viewBox="0 0 24 24">
-                <path d="M4 3h13a2 2 0 0 1 2 2v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm13 2H5v13h12V5z" />
-            </svg>
+            <i data-feather="book"></i>
             <div class="card-title">E - book</div>
         </div>
 
+
         <!-- CARD 2 - E-JOURNAL -->
         <div class="card">
-            <svg viewBox="0 0 24 24">
-                <path
-                    d="M4 3h12a4 4 0 0 1 4 4v13h-2V7a2 2 0 0 0-2-2H4V3zm0 4h14v2H4V7zm0 4h14v2H4v-2zm0 4h10v2H4v-2z" />
-            </svg>
+            <i data-feather="file-text"></i>
             <div class="card-title">E - journal</div>
         </div>
+
 
         <!-- CARD 3 - AUDIOBOOK -->
         <div class="card">
@@ -93,7 +90,7 @@
         </div>
     </section>
 
-        <!-- ========== FOOTER START ========== -->
+    <!-- ========== FOOTER START ========== -->
     <footer class="footer">
 
         <!-- FOLLOW US -->
@@ -158,7 +155,13 @@
 
     </footer>
     <!-- ========== FOOTER END ========== -->
-      <script>
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+
+    <script>
         // Login Modal Functions
         function openLoginModal() {
             document.getElementById('loginModal').classList.add('active');
@@ -189,6 +192,5 @@
     </script>
 
 </body>
-
 
 </html>

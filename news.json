@@ -1,0 +1,31 @@
+{
+  "news": [
+    {
+      "title": "Perpustakaan Al-Qolam Hadirkan Koleksi Baru",
+      "desc": "Perpustakaan Al-Qolam menambah 120+ koleksi buku baru untuk bulan ini.",
+      "image": "img/news1.jpg",
+      "link": "#"
+    },
+    {
+      "title": "Pembaruan Sistem Peminjaman",
+      "desc": "Proses peminjaman kini lebih cepat dengan sistem otomatis.",
+      "image": "img/news1.jpg",
+      "link": "#"
+    }
+  ],
+
+  "announcements": [
+    {
+      "title": "Jam Operasional Baru",
+      "desc": "Perpustakaan buka hingga pukul 22.00 mulai minggu depan.",
+      "image": "img/news1.jpg",
+      "link": "#"
+    },
+    {
+      "title": "Maintenance Server",
+      "desc": "Akses aplikasi akan dibatasi pada tanggal 26–27 November.",
+      "image": "img/news1.jpg",
+      "link": "#"
+    }
+  ]
+}

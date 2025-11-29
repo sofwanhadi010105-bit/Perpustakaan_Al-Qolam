@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section Inti - Perpustakaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="container">
+            <div class="nav-left">
+                <img src="img/logo1.png" alt="Logo">
+                <img src="img/logo2.png" alt="Logo 2">
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="koleksi.html">Koleksi</a></li>
+                <li><a href="tentang kami.html">Tentang Kami</a></li>
+                <li><a href="peminjaman.html" class="active">Peminjaman</a></li>
+                <li><a href="acara.html">Acara</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button class="login-btn" onclick="openLoginModal()">Login</button>
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+        </div>
+    </nav>
+     <!-- LOGIN MODAL -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Form Login</h2>
+                <button class="close-btn" onclick="closeLoginModal()">X</button>
+            </div>
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <div class="register-link">
+                Belum punya akun? <a href="#">Daftar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================
+     SECTION INTI (HERO + SEARCH + CARDS)
+================================ -->
+    <section class="section-hero">
+        <img src="img/placeholder.png" alt="Banner Perpustakaan">
+
+        <div class="search-wrapper">
+            <input type="text" class="search-box" placeholder="Masukkan Kata kunci untuk mencari koleksi ......">
+        </div>
+    </section>
+
+    <section class="section-cards">
+
+        <!-- CARD 1 - E-BOOK -->
+        <div class="card">
+            <svg viewBox="0 0 24 24">
+                <path d="M4 3h13a2 2 0 0 1 2 2v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm13 2H5v13h12V5z" />
+            </svg>
+            <div class="card-title">E - book</div>
+        </div>
+
+        <!-- CARD 2 - E-JOURNAL -->
+        <div class="card">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M4 3h12a4 4 0 0 1 4 4v13h-2V7a2 2 0 0 0-2-2H4V3zm0 4h14v2H4V7zm0 4h14v2H4v-2zm0 4h10v2H4v-2z" />
+            </svg>
+            <div class="card-title">E - journal</div>
+        </div>
+
+        <!-- CARD 3 - AUDIOBOOK -->
+        <div class="card">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M12 3a9 9 0 1 1 0 18a9 9 0 0 1 0-18zm1 4h-2v6h2V7zm-1 8a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3z" />
+            </svg>
+            <div class="card-title">Audiobook</div>
+        </div>
+    </section>
+
+        <!-- ========== FOOTER START ========== -->
+    <footer class="footer">
+
+        <!-- FOLLOW US -->
+        <div class="footer-left">
+            <h3>FOLLOW<br>US</h3>
+
+            <div class="social-icons">
+
+                <!-- INSTAGRAM -->
+                <a href="#" class="social-link">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <circle cx="17" cy="7" r="1.5" fill="white"></circle>
+                    </svg>
+                    ponpes.edimancoro
+                </a>
+
+                <!-- YOUTUBE -->
+                <a href="#" class="social-link">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="2" y="7" width="20" height="10" rx="3"></rect>
+                        <polygon points="10,9 16,12 10,15" fill="white"></polygon>
+                    </svg>
+                    edi mancoro channel
+                </a>
+
+                <!-- TIKTOK -->
+                <a href="#" class="social-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 6v9.5a3.5 3.5 0 1 1-3.5-3.5h1.5" />
+                        <path d="M12 6c1.3 1.8 3.2 2.6 5 2.6" />
+                    </svg>
+                    ponpes_edimancoro
+                </a>
+            </div>
+        </div>
+
+        <!-- QR + WEBSITE + CONTACT -->
+        <div class="footer-mid">
+            <div class="qr-box">
+                <img src="img/qr-edimancoro.png" alt="QR Code" style="width:100%; height:130%; object-fit:cover;">
+            </div>
+
+            <div class="info-text">
+                <div>WEBSITE :</div>
+                <span class="website-box">https://edimancoro.or.id/</span>
+                <div>CONTACT PERSON : <strong>0857-3373-4741</strong></div>
+            </div>
+        </div>
+
+        <!-- ALAMAT -->
+        <div class="footer-right">
+            <h3>LOKASI :</h3>
+            <div class="alamat">
+                Jl. KH. Ahmad Sholeh, RT.002 RW.001, Dsn. Bandungan,
+                Ds. Gedangan, Kec. Tuntang, Semarang, Jawa Tengah 50773
+                Telp: (0298)3433250
+            </div>
+        </div>
+
+    </footer>
+    <!-- ========== FOOTER END ========== -->
+      <script>
+        // Login Modal Functions
+        function openLoginModal() {
+            document.getElementById('loginModal').classList.add('active');
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginModal').classList.remove('active');
+        }
+
+        function handleLogin(event) {
+            event.preventDefault();
+            alert('Login berhasil!');
+            closeLoginModal();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function (event) {
+            const modal = document.getElementById('loginModal');
+            if (event.target === modal) {
+                closeLoginModal();
+            }
+        }
+
+        // Disable right click
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+    </script>
+
+</body>
+
+</html>

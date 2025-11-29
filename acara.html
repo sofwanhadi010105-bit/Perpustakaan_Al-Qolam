@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Bung Karno - Berita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+        <div class="container">
+            <div class="nav-left">
+                <img src="img/logo1.png" alt="Logo">
+                <img src="img/logo2.png" alt="Logo 2">
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="koleksi.html">Koleksi</a></li>
+                <li><a href="tentang kami.html">Tentang Kami</a></li>
+                <li><a href="peminjaman.html">Peminjaman</a></li>
+                <li><a href="acara.html" class="active">Acara</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button class="login-btn" onclick="openLoginModal()">Login</button>
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+        </div>
+    </nav>
+     <!-- LOGIN MODAL -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Form Login</h2>
+                <button class="close-btn" onclick="closeLoginModal()">X</button>
+            </div>
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <div class="register-link">
+                Belum punya akun? <a href="#">Daftar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <main class="main-content">
+                <div class="article-meta">
+                    <span class="article-date">2025-10-22</span>
+                    <span class="article-category">Berita</span>
+                </div>
+
+                <h1 class="article-title">Perpustakaan Bung Karno Raih Anugerah Kebudayaan Indonesia 2025 Kategori Museum</h1>
+
+                <img src="img/award-ceremony.jpg" alt="Penyerahan Anugerah Kebudayaan Indonesia" class="article-image">
+
+                <div class="article-content">
+                    <p><strong>Senayen, Jakarta</strong>—Perpustakaan Proklamator Bung Karno menerima Anugerah Kebudayaan Indonesia Tahun 2025 untuk Kategori Museum. Penghargaan tersebut diserahkan langsung oleh Menteri Kebudayaan Fadli Zon kepada Kepala UPT Perpustakaan Proklamator Bung Karno Nurny Syam, di Plaza Insan Berprestasi, Kementerian Pendidikan Dasar dan Menengah, Jakarta, Selasa (21/10/2025).</p>
+                </div>
+            </main>
+
+            <aside class="sidebar">
+                <article class="sidebar-item">
+                    <img src="img/library-corner.jpg" alt="Potret Perpustakaan" class="sidebar-image">
+                    <div class="sidebar-content">
+                        <h3 class="sidebar-title">Potret Perpustakaan Jusuf Kalla di Ulli yang Cocok Buat Nugas dan Me Time</h3>
+                        <p class="sidebar-excerpt">Bukan pembaca perpustakaan di Perpustakaan Jusuf Kalla kita bisa menikmati suasana sekolang menambah keterangan pada isi pikiran dan pasunya Kota Depok.</p>
+                    </div>
+                </article>
+
+                <article class="sidebar-item">
+                    <img src="img/meeting-room.jpg" alt="Rapat Pemkab" class="sidebar-image">
+                    <div class="sidebar-content">
+                        <div class="sidebar-date">07 Okt 2025 12:29 WIB</div>
+                        <h3 class="sidebar-title">Pemkab Bangli Sulap Perpustakaan agar Anak-anak Tak Sering Main Gadget</h3>
+                        <p class="sidebar-excerpt">Pemerintah Kabupaten Bangli transformasi perpustakaan jadi laboratorium literasi untuk tingkatkan minat baca anak.</p>
+                    </div>
+                </article>
+            </aside>
+        </div>
+    </div>
+
+        <!-- ========== FOOTER START ========== -->
+    <footer class="footer">
+
+        <!-- FOLLOW US -->
+        <div class="footer-left">
+            <h3>FOLLOW<br>US</h3>
+
+            <div class="social-icons">
+
+                <!-- INSTAGRAM -->
+                <a href="#" class="social-link">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <circle cx="17" cy="7" r="1.5" fill="white"></circle>
+                    </svg>
+                    ponpes.edimancoro
+                </a>
+
+                <!-- YOUTUBE -->
+                <a href="#" class="social-link">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="2" y="7" width="20" height="10" rx="3"></rect>
+                        <polygon points="10,9 16,12 10,15" fill="white"></polygon>
+                    </svg>
+                    edi mancoro channel
+                </a>
+
+                <!-- TIKTOK -->
+                <a href="#" class="social-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 6v9.5a3.5 3.5 0 1 1-3.5-3.5h1.5" />
+                        <path d="M12 6c1.3 1.8 3.2 2.6 5 2.6" />
+                    </svg>
+                    ponpes_edimancoro
+                </a>
+            </div>
+        </div>
+
+        <!-- QR + WEBSITE + CONTACT -->
+        <div class="footer-mid">
+            <div class="qr-box">
+                <img src="img/qr-edimancoro.png" alt="QR Code" style="width:100%; height:130%; object-fit:cover;">
+            </div>
+
+            <div class="info-text">
+                <div>WEBSITE :</div>
+                <span class="website-box">https://edimancoro.or.id/</span>
+                <div>CONTACT PERSON : <strong>0857-3373-4741</strong></div>
+            </div>
+        </div>
+
+        <!-- ALAMAT -->
+        <div class="footer-right">
+            <h3>LOKASI :</h3>
+            <div class="alamat">
+                Jl. KH. Ahmad Sholeh, RT.002 RW.001, Dsn. Bandungan,
+                Ds. Gedangan, Kec. Tuntang, Semarang, Jawa Tengah 50773
+                Telp: (0298)3433250
+            </div>
+        </div>
+    </footer>
+    <!-- ========== FOOTER END ========== -->
+        <script>
+        // Login Modal Functions
+        function openLoginModal() {
+            document.getElementById('loginModal').classList.add('active');
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginModal').classList.remove('active');
+        }
+
+        function handleLogin(event) {
+            event.preventDefault();
+            alert('Login berhasil!');
+            closeLoginModal();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function (event) {
+            const modal = document.getElementById('loginModal');
+            if (event.target === modal) {
+                closeLoginModal();
+            }
+        }
+
+        // Disable right click
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Kami - Perpustakaan Al-Qolam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="container">
+            <div class="nav-left">
+                <img src="img/logo1.png" alt="Logo">
+                <img src="img/logo2.png" alt="Logo 2">
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="koleksi.html" class="active">Koleksi</a></li>
+                <li><a href="tentang kami.html">Tentang Kami</a></li>
+                <li><a href="peminjaman.html">Peminjaman</a></li>
+                <li><a href="acara.html">Acara</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button class="login-btn" onclick="openLoginModal()">Login</button>
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+        </div>
+    </nav>
+     <!-- LOGIN MODAL -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Form Login</h2>
+                <button class="close-btn" onclick="closeLoginModal()">X</button>
+            </div>
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <div class="register-link">
+                Belum punya akun? <a href="#">Daftar</a>
+            </div>
+        </div>
+    </div>
+    <!-- ========== JUDUL ========== -->
+    <h1 class="koleksi-title">KOLEKSI KAMI</h1>
+
+    <!-- ========== KATEGORI ========== -->
+    <div class="kategori-container">
+        <div class="kategori-card">
+            <img src="img/ebook.png" alt="">
+            <div class="kategori-name">E - book</div>
+        </div>
+
+        <div class="kategori-card">
+            <img src="img/journal.png" alt="">
+            <div class="kategori-name">E - journal</div>
+        </div>
+
+        <div class="kategori-card">
+            <img src="img/audiobook.png" alt="">
+            <div class="kategori-name">Audiobook</div>
+        </div>
+    </div>
+
+    <!-- ========== CONTENT ========== -->
+    <div class="content-area">
+
+        <!-- LEFT BOOKS -->
+        <div class="left-books">
+
+            <h3>Manusianlangit</h3>
+            <p>
+                Kumpulan prosa dan fotografi karya Roqib Adam yang menceritakan perjalanannya dalam memahami dan
+                mengabadikan keajaiban langit setelah patah hati.
+            </p>
+
+            <h3>Luka Langit & Sebuah Mimpi</h3>
+            <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753176809i/239163390.jpg"
+                alt="">
+            <p>
+                Novel karya Roqib Adam dan merupakan bagian dari seri "Manusia dan Langit" yang diterbitkan oleh Gozael.
+            </p>
+        </div>
+
+        <!-- RIGHT AUDIOBOOK -->
+        <div class="right-books">
+
+            <div class="right-item">
+                <img src="img/audio-icon.png" class="audio-icon">
+                <div>
+                    <h3>Manusianlangit</h3>
+                    <p>Kumpulan prosa dan fotografi karya Roqib Adam yang menceritakan perjalanannya memahami keajaiban
+                        langit setelah patah hati.</p>
+                </div>
+            </div>
+
+            <div class="right-item">
+                <img src="img/audio-icon.png" class="audio-icon">
+                <div>
+                    <h3>Luka Langit & Sebuah Mimpi</h3>
+                    <p>Novel karya Roqib Adam dari seri "Manusia dan Langit" yang diterbitkan oleh Gozael.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ========== FOOTER START ========== -->
+    <footer class="footer">
+
+        <!-- FOLLOW US -->
+        <div class="footer-left">
+            <h3>FOLLOW<br>US</h3>
+
+            <div class="social-icons">
+
+                <!-- INSTAGRAM -->
+                <a href="#" class="social-link">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <circle cx="17" cy="7" r="1.5" fill="white"></circle>
+                    </svg>
+                    ponpes.edimancoro
+                </a>
+
+                <!-- YOUTUBE -->
+                <a href="#" class="social-link">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="2" y="7" width="20" height="10" rx="3"></rect>
+                        <polygon points="10,9 16,12 10,15" fill="white"></polygon>
+                    </svg>
+                    edi mancoro channel
+                </a>
+
+                <!-- TIKTOK -->
+                <a href="#" class="social-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 6v9.5a3.5 3.5 0 1 1-3.5-3.5h1.5" />
+                        <path d="M12 6c1.3 1.8 3.2 2.6 5 2.6" />
+                    </svg>
+                    ponpes_edimancoro
+                </a>
+            </div>
+        </div>
+
+        <!-- QR + WEBSITE + CONTACT -->
+        <div class="footer-mid">
+            <div class="qr-box">
+                <img src="img/qr-edimancoro.png" alt="QR Code" style="width:100%; height:130%; object-fit:cover;">
+            </div>
+
+            <div class="info-text">
+                <div>WEBSITE :</div>
+                <span class="website-box">https://edimancoro.or.id/</span>
+                <div>CONTACT PERSON : <strong>0857-3373-4741</strong></div>
+            </div>
+        </div>
+
+        <!-- ALAMAT -->
+        <div class="footer-right">
+            <h3>LOKASI :</h3>
+            <div class="alamat">
+                Jl. KH. Ahmad Sholeh, RT.002 RW.001, Dsn. Bandungan,
+                Ds. Gedangan, Kec. Tuntang, Semarang, Jawa Tengah 50773
+                Telp: (0298)3433250
+            </div>
+        </div>
+
+    </footer>
+    <!-- ========== FOOTER END ========== -->
+     <script>
+        // Login Modal Functions
+        function openLoginModal() {
+            document.getElementById('loginModal').classList.add('active');
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginModal').classList.remove('active');
+        }
+
+        function handleLogin(event) {
+            event.preventDefault();
+            alert('Login berhasil!');
+            closeLoginModal();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function (event) {
+            const modal = document.getElementById('loginModal');
+            if (event.target === modal) {
+                closeLoginModal();
+            }
+        }
+
+        // Disable right click
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
